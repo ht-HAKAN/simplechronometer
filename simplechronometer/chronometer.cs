@@ -50,10 +50,15 @@ namespace MyChronometer
 
         private void UpdateLabel()
         {
-            label1.Text = $"{hours:00}:{minutes:00}:{seconds:00}:{milliseconds / 10:00}";
+            time.Text = $"{hours:00}:{minutes:00}:{seconds:00}:{milliseconds / 10:00}";
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void time_Click(object sender, EventArgs e)
         {
 
         }
