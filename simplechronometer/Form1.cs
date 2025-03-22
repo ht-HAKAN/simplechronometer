@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace simplechronometer
 {
-    public partial class Form1: Form
+    public partial class Chronometer: Form
     {
-        public Form1()
+        public Chronometer()
         {
             InitializeComponent();
         }
