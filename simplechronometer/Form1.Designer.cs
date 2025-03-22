@@ -1,6 +1,6 @@
-﻿namespace simplechronometer
+﻿namespace MyChronometer
 {
-    partial class Chronometer
+    partial class chronometer
     {
         /// <summary>
         /// Required designer variable.
@@ -28,26 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Chronometer));
-            this.timer = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(chronometer));
+            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // timer
+            // label1
             // 
-            this.timer.AutoSize = true;
-            this.timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.timer.Location = new System.Drawing.Point(156, 99);
-            this.timer.Name = "timer";
-            this.timer.Size = new System.Drawing.Size(385, 76);
-            this.timer.TabIndex = 0;
-            this.timer.Text = "00:00:00:00";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.DimGray;
+            this.label1.Font = new System.Drawing.Font("Unispace", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(-8, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(698, 115);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "00:00:00:00";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 262);
+            this.button1.Location = new System.Drawing.Point(12, 194);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(170, 70);
             this.button1.TabIndex = 1;
@@ -57,7 +60,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(257, 262);
+            this.button2.Location = new System.Drawing.Point(257, 194);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 70);
             this.button2.TabIndex = 2;
@@ -67,7 +70,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(504, 262);
+            this.button3.Location = new System.Drawing.Point(504, 194);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(170, 70);
             this.button3.TabIndex = 3;
@@ -75,17 +78,18 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // Chronometer
+            // chronometer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(686, 357);
+            this.BackColor = System.Drawing.Color.DimGray;
+            this.ClientSize = new System.Drawing.Size(686, 270);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.timer);
+            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Chronometer";
+            this.Name = "chronometer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Chronometer";
             this.ResumeLayout(false);
@@ -95,7 +99,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label timer;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
